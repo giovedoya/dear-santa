@@ -32,6 +32,6 @@ module.exports = [
       image: 'https://static.thcdn.com/images/large/webp//productimg/1600/1600/13030334-8994873044809736.jpg',
       price: 26.49,
       recipient: 'Jose',
-      description: 'Illuminating Jason Vorhees’ iconic hockey mask, this Friday the 13th Light pays homage to the slasher movie franchise. The grisly lamp can be easily operated via USB or made entirely portable using batteries.'
+      description: 'Illuminating Jason Vorhees iconic hockey mask, this Friday the 13th Light pays homage to the slasher movie franchise. The grisly lamp can be easily operated via USB or made entirely portable using batteries.'
     },
   ]
