@@ -1,4 +1,8 @@
-<h1>AQUI DEBE SALIR ESTO</h1>
+<form method-"GET" action="/presents/search">
+  <Label>Search by title</Label>
+  <input type="text" name="title"/>
+  <button type="submit">Search</button>
+</form>
 {{#each presents }}
 <img width="200" src="{{this.image}}" alt={{this.title}}>
 <p>{{this.name}}</p>

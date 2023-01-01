@@ -1,0 +1,21 @@
+<div>
+  <h2> Add new present</h2>
+  <div>
+    <form method="POST" action="/presents/new">
+      <label>Present title</label>
+      <input type="text" name="name" placeholder="Present title" required/>
+      <label>Present image</label>
+      <input type="text" name="image" placeholder="https://..." required>
+      <label>Present price</label>
+      <input type="number" name="price" placeholder="15" required>
+      <label>Present recipient</label>
+      <input type="text" name="recipient" placeholder="Anna" required>
+      <label>Present season</label>
+      <label> Present description </label>
+      <textarea name="description" cols="30" rows="5" required></textarea>
+      <div class="form-button">
+        <button type="submit">Create!</button>
+      </div>
+    </form>
+  </div>
+</div>
