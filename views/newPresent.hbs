@@ -3,16 +3,16 @@
   <div>
     <form method="POST" action="/presents/new">
       <label>Present title</label>
-      <input type="text" name="name" placeholder="Present title" required/>
+      <input required type="text" name="name" placeholder="Present title"/>
       <label>Present image</label>
-      <input type="text" name="image" placeholder="https://..." required>
+      <input required type="text" name="image" placeholder="https://...">
       <label>Present price</label>
-      <input type="number" name="price" placeholder="15" required>
+      <input required type="number" name="price" placeholder="15">
       <label>Present recipient</label>
-      <input type="text" name="recipient" placeholder="Anna" required>
+      <input required type="text" name="recipient" placeholder="Soranny" >
       <label>Present season</label>
       <label> Present description </label>
-      <textarea name="description" cols="30" rows="5" required></textarea>
+      <textarea required name="description" cols="30" rows="5"></textarea>
       <div class="form-button">
         <button type="submit">Create!</button>
       </div>

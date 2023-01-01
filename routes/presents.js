@@ -44,6 +44,18 @@ router.post('/new', async function (req, res, next) {
   }
 }); 
 
+/* POTS delete present */
+/* ROUTE presents/delete/:id*/
+router.post('/delete/:id', async function (req, res, next) {
+  const { id } = req.params;
+  try {
+      await Present.findByIdAndDelete(id);
+      res.redirect('/presents');
+  } catch (error) {
+      next(error)
+  }
+}); 
+
 /* GET one presents page. */
 /* ROUTE presents/:presentsId */
 router.get('/:presentsId', async function (req, res, next){
