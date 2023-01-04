@@ -1,0 +1,18 @@
+<div class="card-detail">
+    <div class="img-present">
+        <img src="{{this.image}}" alt={{this.title}}>
+    </div>
+    <div class="title-present">
+        <h2>{{name}}</h2>
+        <ul>
+            <li>£{{price}}</li>
+            <li>{{recipient}}</li>
+            <li>{{description}}</li>
+            <li>
+                <form method="POST" action="/presents/delete/{{_id}}">
+                <button class="button-1" type="submit" >Delete</button>
+                </form>
+            </li>    
+        </ul>                
+    </div>    
+</div>

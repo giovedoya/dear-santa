@@ -1,20 +1,29 @@
-<div>
-  <h2> Add new present</h2>
-  <div>
+<div class="form">
+  <div class="form-html">
+    <h2> Add new present</h2>
     <form method="POST" action="/presents/new">
-      <label>Present title</label>
-      <input required type="text" name="name" placeholder="Present title"/>
-      <label>Present image</label>
-      <input required type="text" name="image" placeholder="https://...">
-      <label>Present price</label>
-      <input required type="number" name="price" placeholder="15">
-      <label>Present recipient</label>
-      <input required type="text" name="recipient" placeholder="Soranny" >
-      <label>Present season</label>
-      <label> Present description </label>
-      <textarea required name="description" cols="30" rows="5"></textarea>
-      <div class="form-button">
-        <button type="submit">Create!</button>
+    <div class="group-input">
+      <label>Name</label>
+      <input class="tab" required type="text" name="Name" placeholder="name"/>      
+    </div>
+    <div class="group-input">
+     <label>Image</label>
+      <input class="tab" required type="text" name="image" placeholder="https://...">
+    </div>
+    <div class="group-input">
+      <label>Price</label>
+      <input class="tab" required type="number" name="price" placeholder="15">
+    </div>
+    <div class="group-input">
+      <label>Recipient</label>
+      <input class="tab" required type="text" name="recipient" placeholder="Soranny" >
+    </div>
+    <div class="group-input">
+      <label>Description </label>
+      <textarea class="tab-des" required name="description" cols="30" rows="5"></textarea>
+    </div>
+      <div>
+        <button class="form-button" type="submit">Create!</button>
       </div>
     </form>
   </div>

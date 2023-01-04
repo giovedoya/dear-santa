@@ -1,10 +1,10 @@
-<form method-"GET" action="/presents/search">
+{{!-- <form method-"GET" action="/presents/search">
   <Label>Search by title</Label>
   <input type="text" name="title"/>
   <button type="submit">Search</button>
-</form>
-{{#each presents }}
-<img width="200" src="{{this.image}}" alt={{this.title}}>
-<p>{{this.name}}</p>
-<p><a href="/presents/{{_id}}">See more</a></p>    
-{{/each}}
+</form> --}}
+<div class="page-presents">
+  {{#each presents }}
+  {{> cardPresents this}}
+  {{/each}}
+</div>
